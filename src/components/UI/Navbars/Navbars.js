@@ -32,7 +32,6 @@ const Navbars = ({ children }) => {
             : "var(--blue-primary)",   // tablet & desktop: always blue
         position: "fixed",
         zIndex: "10",
-        width: "100%",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
