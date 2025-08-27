@@ -14,7 +14,7 @@ const MainLayout = ({children}) => {
             style={{
                 backgroundColor:"var(--white-primary)" ,
                 position:"relative",
-                overflowY:"hidden"
+                overflow:"hidden"
             }}
         >   
             <Navbars>
