@@ -26,23 +26,33 @@ code {
 
 
 :root {
-  /* White / Neutral */
   --white-lighter: #FFFFFF;
-  --white-light: #FAFAFA;     /* Soft Off White */
-  --white-primary: #E0FBFC;   /* Pale Cyan Gray */
-  --white-dark: #D9D9D9;      /* Border Neutral */
-  --white-darker: #7A7A7A;    /* Muted Gray */
+  --white-light: #FAFAFA;     
+  --white-primary: #E0FBFC;   
+  --white-dark: #D9D9D9;      
+  --white-darker: #7A7A7A;    
 
-  /* Blue */
-  --blue-light: #98C1D9;      /* Pastel Blue */
-  --blue-primary: #3D5A80;    /* Muted Navy */
-  --blue-dark: #2C3E50;       /* Extra depth if needed */
+  --blue-lighter: #D0E4F0;    
+  --blue-light: #98C1D9;      
+  --blue-primary: #3D5A80;    
+  --blue-dark: #2C3E50;       
+  --blue-darker: #1B2A38;     
 
-  /* Accent (Orange/Coral) */
-  --orange-light: #FF9B80;    /* Softer Coral */
-  --orange-primary: #EE6C4D;  /* Warm Coral */
-  --orange-dark: #CC4A36;     /* Darker Coral */
+  --orange-lighter: #FFD6C4;  
+  --orange-light: #FF9B80;    
+  --orange-primary: #EE6C4D;  
+  --orange-dark: #CC4A36;     
+  --orange-darker: #99321F;   
 
-  /* Black */
-  --black-primary: #1A1A1A;   /* Almost Black (text) */
+  --black-lighter: #555555;   
+  --black-primary: #1A1A1A;   
+  --black-dark: #0F0F0F;      
+  --black-darker: #000000;    
+
+  --olive-lighter: #D9D7B8;   
+  --olive-light:   #BFB87A;   
+  --olive-primary: #73683B;   
+  --olive-dark:    #5A4E30;   
+  --olive-darker:  #3D2E1A;
 }
+

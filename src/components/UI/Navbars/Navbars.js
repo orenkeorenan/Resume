@@ -23,13 +23,13 @@ const Navbars = ({ children }) => {
   return (
     <nav
       style={{
-        height: "10vh",
+        height: "5rem",
         backgroundColor:
           screen === "mobile"
             ? scrolledToBottom
-              ? "var(--blue-primary)" // mobile: only at bottom
+              ? "var(--black-lighter)" // mobile: only at bottom
               : "transparent"
-            : "var(--blue-primary)",   // tablet & desktop: always blue
+            : "var(--black-lighter)",   // tablet & desktop: always blue
         position: "fixed",
         zIndex: "10",
         display: "flex",

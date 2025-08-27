@@ -12,8 +12,10 @@ const MainLayout = ({children}) => {
     return (
         <div
             style={{
-                backgroundColor:"var(--white-primary)" ,
+                backgroundColor:"var(--black-primary)" ,
                 position:"relative",
+                color:"var(--white-primary)",
+                minHeight:"100vh",
             }}
         >   
             <Navbars>
