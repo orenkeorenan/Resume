@@ -7,7 +7,7 @@ const PicturePanel = () => {
     return (
         <div
             style={{
-                width: screen === "desktop" ? "40vw" : "100vw",
+                width: screen === "desktop" ? "40vw" : "100%",
                 height: screen === "desktop" ? "100vh" : "60vh",
                 position: screen === "desktop" ? "fixed" : "relative",
                 display: "flex",

@@ -13,16 +13,32 @@ const Main = () => {
                 <div
                     style={{
                         backgroundColor:'green',
-                        position:'absolute',
                         width:"100%",
-                        height:"10vh",
-                        bottom:"0"
+                        height:'1rem',
+                        top:"0",
+                        position:"relative"
                     }}
                 >
-                    Bernardus Oren
+                    <div
+                        style={{
+                            position:"absolute",
+                            top:"-1rem",
+                            left:"50%",
+                            transform:"translateX(-50%)",
+                            backgroundColor:"var(--blue-primary)",
+                            color:"white",
+                            padding:"0.2rem 0.5rem",
+                            borderRadius:"0.5rem",
+                            fontSize:"0.8rem",
+                            fontWeight:"bold",
+                            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+                        }}
+                    >
+                        Bernardus Oren
+                    </div>
                 </div>
             )}
-            {/* <div
+            <div
                 style={{
                     height:screen==="desktop"?"100vh":"70vh",
                 }}
@@ -49,7 +65,7 @@ const Main = () => {
                 }}
             >
 
-            </div> */}
+            </div>
         </MainLayout>
     );
 };

@@ -6,7 +6,7 @@ const ContentsContainer = ({children}) => {
     return (
         <div
             style={{
-                width:"100vw",
+                width:"100%",
                 display:'flex',
                 position:"relative",
                 flexDirection:screen==="desktop"?"row":"column",

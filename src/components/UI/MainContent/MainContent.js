@@ -5,7 +5,7 @@ const MainContent = ({children}) => {
     return (
         <div
             style={{
-                width:screen==="desktop"?"60vw":"100vw",
+                width:screen==="desktop"?"60vw":"100%",
                 marginLeft:screen === "desktop" ? "40vw":""
             }}
         >

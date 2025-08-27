@@ -13,11 +13,11 @@ const MainLayout = ({children}) => {
         <div
             style={{
                 backgroundColor:"var(--white-primary)" ,
-                position:"relative"
+                position:"relative",
+                overflowY:"hidden"
             }}
         >   
             <Navbars>
-
                 <div
                     style={{
                         height:"100%",
@@ -29,7 +29,9 @@ const MainLayout = ({children}) => {
                     <img 
                         src={Logo}
                         style={{
-                            height:"90%"
+                            height:"90%",
+                            maxWidth:"100%",
+                            objectFit:"contain",
                         }}
                     />
                 </div>

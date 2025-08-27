@@ -30,13 +30,13 @@ const Navbars = ({ children }) => {
             : scrolledToBottom
             ? "var(--blue-primary)"
             : "transparent",
-        position: "absolute",
+        position: "fixed",
         zIndex: "10",
-        width: "100vw",
+        width: "100%",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        transition: "background-color 0.3s ease", // smooth transition
+        transition: "background-color 0.3s ease",
       }}
     >
       {children}
