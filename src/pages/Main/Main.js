@@ -12,8 +12,11 @@ const Main = () => {
 
                 <div
                     style={{
-                        backgroundColor:'green'
-                        
+                        backgroundColor:'green',
+                        position:'absolute',
+                        width:"100%",
+                        height:"10vh",
+                        bottom:"0"
                     }}
                 >
                     Bernardus Oren

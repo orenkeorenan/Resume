@@ -15,7 +15,7 @@ const PicturePanel = () => {
                 alignItems: "center",
                 backgroundImage: `url(${PhotoProfile})`,
                 backgroundRepeat:'no-repeat',
-                backgroundPosition:"top center",
+                backgroundPosition:"center center",
                 backgroundSize:'cover',
             }}
         >

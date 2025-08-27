@@ -3,7 +3,7 @@ import PicturePanel from '../../UI/PicturePanel/PicturePanel';
 import ContentsContainer from './ContentsContainer';
 import MainContent from './../../UI/MainContent/MainContent';
 import Navbar from '../../UI/Navbars/Navbar/Navbar';
-import Logo from '../../../assets/Logo.png'
+import Logo from '../../../assets/LogoTrans.png'
 import { useScreenSize } from '../../../hooks/useScreenSize';
 
 const MainLayout = ({children}) => {
