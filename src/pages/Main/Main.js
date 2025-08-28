@@ -13,27 +13,21 @@ const Main = () => {
             
             <div
                 style={{
-                    marginTop: screen === "desktop" ? "30vw" : "5vw",
-                    marginLeft: screen === "desktop" ? "4rem" : "0", // remove 2rem on mobile
-                    paddingRight: screen === "mobile" ? "1rem" : "0", // safe padding inside viewport
-                    boxSizing: "border-box"
+                    marginTop: screen === "desktop"? "30vw" :"5vw",
+                    marginLeft: screen ==="desktop"? "4rem" :"0"
                 }}
             >
+
                 <TypingHead/>
             </div>
-
             <ShortTagline/>
-
             <div
                 style={{
-                    marginLeft: screen === "desktop" ? "4rem" : "0", // remove extra margin on mobile
-                    paddingRight: screen === "mobile" ? "1rem" : "0",
-                    boxSizing: "border-box"
+                    marginLeft:screen ==="desktop"?"4rem":"2rem",
                 }}
             >
                 <AboutMe/>
             </div>
-
         </MainLayout>
     );
 };
