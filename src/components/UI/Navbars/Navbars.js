@@ -6,7 +6,8 @@ const Navbars = ({ children }) => {
   const [scrolledToBottom, setScrolledToBottom] = useState(false);
 
   useEffect(() => {
-    if (screen !== "mobile") return; // only apply scroll logic on mobile
+    // apply logic for mobile & tablet
+    if (screen === "desktop") return;
 
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -25,11 +26,11 @@ const Navbars = ({ children }) => {
       style={{
         height: "5rem",
         backgroundColor:
-          screen === "mobile"
-            ? scrolledToBottom
-              ? "var(--black-lighter)" // mobile: only at bottom
-              : "transparent"
-            : "var(--black-lighter)",   // tablet & desktop: always blue
+          screen === "desktop"
+            ? "var(--black-lighter)" // desktop: always
+            : scrolledToBottom
+            ? "var(--black-lighter)" // mobile + tablet: only at bottom
+            : "transparent",
         position: "fixed",
         zIndex: "10",
         display: "flex",
