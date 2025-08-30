@@ -15,7 +15,6 @@ const MainLayout = ({children}) => {
                 backgroundColor:"var(--black-primary)" ,
                 position:"relative",
                 color:"var(--white-primary)",
-                minHeight:"100vh",
             }}
         >   
             <Navbars>
