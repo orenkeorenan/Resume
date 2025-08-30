@@ -5,23 +5,25 @@ const breakpoints = {
   tablet: 1024,
 };
 
-function getDeviceType(width, height) {
-  const w = Math.min(width, height); // account for rotation
-  if (w <= breakpoints.mobile) return "mobile";
-  if (w <= breakpoints.tablet) return "tablet";
+function getDeviceType(width) {
+  if (width <= breakpoints.mobile) return "mobile";
+  if (width <= breakpoints.tablet) return "tablet";
   return "desktop";
 }
 
 export function useScreenSize() {
-  const [device, setDevice] = useState(getDeviceType(window.innerWidth, window.innerHeight));
+  const [device, setDevice] = useState("desktop"); // safe default for SSR
 
   useEffect(() => {
+    // initialize after mount
     const handleResize = () => {
-      setDevice(getDeviceType(window.innerWidth, window.innerHeight));
+      setDevice(getDeviceType(window.innerWidth));
     };
 
+    handleResize(); // immediately set correct value
+
     window.addEventListener("resize", handleResize);
-    window.addEventListener("orientationchange", handleResize); // also listen for rotation
+    window.addEventListener("orientationchange", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -29,5 +31,5 @@ export function useScreenSize() {
     };
   }, []);
 
-  return device; // "mobile" | "tablet" | "desktop"
+  return device;
 }

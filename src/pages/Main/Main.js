@@ -22,9 +22,8 @@ const Main = () => {
             
             <div
                 style={{
-                    marginTop: screen === "desktop"? "30vw" :"5vw",
+                    marginTop: screen === "desktop"? "50%" :"5vw",
                     marginLeft:screen ==="desktop"?"4rem":"2rem",
-                    
                 }}
             >
                 <TypingHead/>
@@ -46,11 +45,11 @@ const Main = () => {
                 <Projects/>
             </SectionWrapper>
              
-            <SectionWrapper>
+            <SectionWrapper style={{borderBottom:'none'}}>
                 <Experiences/>
             </SectionWrapper>
 
-            <SectionWrapper>
+            <SectionWrapper style={{borderBottom:'none'}}>
                 <Education/>
             </SectionWrapper>
 

@@ -27,7 +27,7 @@ const experiencesData = [
     },
     {
         date: "2025",
-        title: "HanChamp – SeaCrew Management Support",
+        title: "HanCham – SeaCrew Management Support",
         description:
         "Assisted Indonesian seafarers in securing employment in Korea. Coordinated communication and resolved issues between workers and local companies.",
     },
@@ -92,7 +92,7 @@ const Experiences = () => {
                     display: "flex",
                     flexDirection: screen === "desktop" ? "row" : "column",
                     gap: "2rem",
-                    height: screen ==="desktop"?"18vh":screen === "tablet" ? "10vh" :"30vh"
+                    height: screen ==="desktop"?"20vh":screen === "tablet" ? "10vh" :"30vh"
                 }}
             >
                 {visibleExperiences.map((exp, idx) => (
@@ -115,7 +115,7 @@ const Experiences = () => {
                                 ? "horizontal-tb" 
                                 : "vertical-rl",
                             textAlign: "left",
-                            fontWeight: "bold",
+                            fontWeight: "bolder",
                             color: "var(--olive-light)",
                             minWidth: "3rem",
                             fontSize: "0.9rem",

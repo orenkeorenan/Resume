@@ -33,9 +33,9 @@ const NameTag = () => {
                                 flexDirection:"column",
                                 alignItems:"start",
                                 justifyContent:"center",
-                                fontSize:"5rem",
+                                fontSize:"4rem",
                                 textAlign:"center",
-                                marginLeft:`calc(${width}/1.5)`,
+                                marginLeft:`calc(${width}/2)`,
                                 gap:"0.5rem"
                             }}
                         >

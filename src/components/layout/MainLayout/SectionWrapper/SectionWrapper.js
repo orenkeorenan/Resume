@@ -7,9 +7,10 @@ const SectionWrapper = ({children,style}) => {
         <div
             style={{
                 marginLeft:screen ==="desktop"?"4rem":"2rem",
-                marginRight:screen==="mobile"?"2rem":"4rem",
+                marginRight:"2rem",
                 textAlign: screen === "desktop" ? "left" : "justify",
                 borderBottom: "1px solid var(--olive-lighter)",
+                marginBottom: "3rem",
                 ...style,
             }}
         >
