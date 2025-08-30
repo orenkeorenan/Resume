@@ -66,7 +66,7 @@ const NameTag = () => {
                             display:"flex",
                             alignItems:"center",
                             justifyContent:"center",
-                            fontSize:screen==="mobile"?"1.4rem":"3rem",
+                            fontSize:screen==="mobile"?"1.4rem":"1.8rem",
                             borderTopLeftRadius:"100vw",
                             borderTopRightRadius:"100vw",
                             

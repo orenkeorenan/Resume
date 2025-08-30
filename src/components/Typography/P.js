@@ -8,7 +8,6 @@ const P = ({children}) => {
                 fontSize:screen==="mobile"?"14px": "18px",
                 lineHeight: "1.6",
                 boxSizing:"border-box",
-                paddingRight:"4rem",
                 textAlign:"justify"
             }}
         >

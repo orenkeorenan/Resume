@@ -4,6 +4,15 @@ import NameTag from './NameTag/NameTag';
 import ShortTagline from './ShortTagline/ShortTagline';
 import TypingHead from './TypingHead/TypingHead';
 import AboutMe from './AboutMe/AboutMe';
+import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
+import SkillsVrTwo from './Skills/SkillsVrTwo';
+import Experiences from './Experiences/Experiences';
+
+import SectionWrapper from '../../components/layout/MainLayout/SectionWrapper/SectionWrapper';
+import { BiBorderBottom } from 'react-icons/bi';
+import Education from './Education/Education';
+
 
 const Main = () => {
     const screen= useScreenSize();
@@ -14,20 +23,37 @@ const Main = () => {
             <div
                 style={{
                     marginTop: screen === "desktop"? "30vw" :"5vw",
-                    marginLeft: screen ==="desktop"? "4rem" :"0"
+                    marginLeft:screen ==="desktop"?"4rem":"2rem",
+                    
                 }}
             >
-
                 <TypingHead/>
             </div>
-            <ShortTagline/>
-            <div
-                style={{
-                    marginLeft:screen ==="desktop"?"4rem":"2rem",
-                }}
-            >
+
+            <SectionWrapper style={{borderBottom:'none'}}>
+                <ShortTagline/>
+            </SectionWrapper>
+
+            <SectionWrapper>
                 <AboutMe/>
-            </div>
+            </SectionWrapper>
+
+            <SectionWrapper>
+                <SkillsVrTwo/>
+            </SectionWrapper>
+            
+            <SectionWrapper>
+                <Projects/>
+            </SectionWrapper>
+             
+            <SectionWrapper>
+                <Experiences/>
+            </SectionWrapper>
+
+            <SectionWrapper>
+                <Education/>
+            </SectionWrapper>
+
         </MainLayout>
     );
 };

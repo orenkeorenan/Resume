@@ -23,26 +23,27 @@ const Navbars = ({ children }) => {
 
   return (
     <nav
-      style={{
-        height: "5rem",
-        backgroundColor:
-          screen === "desktop"
-            ? "var(--black-lighter)" // desktop: always
-            : scrolledToBottom
-            ? "var(--black-lighter)" // mobile + tablet: only at bottom
-            : "transparent",
-        position: "fixed",
-        zIndex: "10",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        transition: "background-color 0.3s ease",
-        top: 0,
-        left: 0,
-        right: 0,
-      }}
+        style={{
+            height: "5rem",
+            backgroundColor:
+            screen === "desktop"
+                ? "var(--black-lighter)" // desktop: always
+                : scrolledToBottom
+                ? "var(--black-lighter)" // mobile + tablet: only at bottom
+                : "transparent",
+            position: "fixed",
+            zIndex: "10",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            transition: "background-color 0.3s ease",
+            top: 0,
+            left: 0,
+            right: 0,
+            width:"100vw",
+        }}
     >
-      {children}
+        {children}
     </nav>
   );
 };

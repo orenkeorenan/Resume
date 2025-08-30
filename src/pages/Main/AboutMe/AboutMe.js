@@ -13,12 +13,17 @@ const AboutMe = () => {
         
 
     return (
-        <div style={{ marginTop:screen === "desktop"?"22vh":"20vh" }}>
-            <H1>About Me</H1>
-            <H2>MY STORY</H2>
-            <div style={{ marginTop:"4rem", marginBottom:'2rem' }}>
+        <div style={{ marginTop:screen === "desktop"?"25vh":"4vh" }}>
+            <div
+                style={{
+                    textAlign: isMobile ? "center" : "left",
+                }}
+            >
+                <H1>About Me</H1>
+                <H2>MY STORY</H2>
+            </div>
+            <div style={{ marginTop:"2rem", marginBottom:'2rem' }}>
                 <CollapsibleText isMobile={isMobile}>
-                
                     <P>
                         I was born and raised in Jakarta, Indonesia, in 1996. From a young age, I have been curious about how things work and inspired by my father’s hands-on approach to solving problems. I value continuous learning and enjoy creating and improving systems through practical solutions.
                     </P>
@@ -38,7 +43,7 @@ const AboutMe = () => {
                     { label: "Nationality", value: "Indonesia" },
                     { label: "Residence", value: "Namgu, Busan" },
                     { label: "Email", value: "bernardusoren123@gmail.com" },
-                    { label: "Languages", value: "English, Korean, Indonesian" },
+                    { label: "Languages", value: "English , Korean , Indonesian" },
                 ]}
             />
         </div>

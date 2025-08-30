@@ -40,10 +40,10 @@ const TypingHead = () => {
     <div 
         style={{ 
             fontWeight: "bold",
-            textAlign:screen === "desktop"?"left":"center" ,
+            textAlign:screen === "mobile"?"center":"left" ,
             margin:"2rem 0",
             color:"var(--olive-light)",
-            fontSize:'1.2rem'
+            fontSize:'1.2rem',
         }}
     >
         {displayedText}
